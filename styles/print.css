@@ -1,7 +1,7 @@
 /* hide unuseful containers */
-#readme .name,
+#files .meta,
 .site-footer,
-.bubble,
+.commit,
 .file-navigation,
 .capped-box,
 .repository-meta,
@@ -14,4 +14,13 @@
 /* bigger main container */
 .repository-content {
     width: 960px !important;
+}
+
+.repository-content .file {
+    border: none !important;
+}
+
+.repository-content .bubble,
+.repository-content article {
+    padding: 0 !important;
 }
