@@ -1,8 +1,7 @@
 GitHub Print
 ============
 
-With this Google Chrome extension, You can print README.md file without
-other containers which exists on page.
+Print *.md file without unnecessary containers, ex. README.md
 
 Plugin use CSS Style injection to `display: none` useless elements.
 
