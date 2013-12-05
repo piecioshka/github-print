@@ -1,0 +1,17 @@
+/* hide unuseful containers */
+#readme .name,
+.site-footer,
+.bubble,
+.file-navigation,
+.capped-box,
+.repository-meta,
+.repository-sidebar,
+.pagehead,
+.header {
+    display: none !important;
+}
+
+/* bigger main container */
+.repository-content {
+    width: 960px !important;
+}
