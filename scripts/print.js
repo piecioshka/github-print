@@ -11,7 +11,7 @@
         var tag = document.createElement("link");
         tag.setAttribute("type", "text/css");
         tag.setAttribute("rel", "stylesheet");
-        // tag.setAttribute("media", "print");
+        tag.setAttribute("media", "print");
         return tag;
     }
 
