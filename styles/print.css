@@ -1,5 +1,5 @@
-/* hide unuseful containers */
-#files .meta,
+/* hide useless containers */
+.meta,
 .site-footer,
 .commit,
 .file-navigation,

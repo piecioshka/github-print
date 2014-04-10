@@ -1,28 +1,41 @@
 /**
  * @author Piotr Kowalski <piecioshka@gmail.com>
- * @fileOverview Set style for CSS print on http://github.com/**
+ * @fileOverview Print README.md file on Github
  */
+
+/*global document, chrome */
+
 (function () {
     'use strict';
 
-    var PRINT_STYLE_FILE = chrome.extension.getURL("styles/print.css");
-
-    function createLinkTag() {
-        var tag = document.createElement("link");
-        tag.setAttribute("type", "text/css");
-        tag.setAttribute("rel", "stylesheet");
-        tag.setAttribute("media", "print");
-        return tag;
+    function PrintStyle() {
+        this.initialize();
     }
 
-    function applyPrintStyle() {
-        var style = createLinkTag();
-        style.setAttribute("href", PRINT_STYLE_FILE);
-        document.getElementsByTagName("head")[0].appendChild(style);
-    }
+    PrintStyle.PRINT_STYLE_FILE = chrome.extension.getURL('styles/print.css');
 
-    // GO GO GO!
-    applyPrintStyle();
+    PrintStyle.prototype = {
+        initialize: function () {
+            this.el = document.createElement('link');
+            this.build();
+        },
+
+        build: function () {
+            this.el.setAttribute('type', 'text/css');
+            this.el.setAttribute('rel', 'stylesheet');
+            this.el.setAttribute('media', 'print');
+            this.el.setAttribute('href', PrintStyle.PRINT_STYLE_FILE);
+        },
+
+        render: function () {
+            document.getElementsByTagName('head')[0].appendChild(this.el);
+        }
+    };
+
+    // ------------------------------------------------------------------------
+
+    var style = new PrintStyle();
+    style.render();
 
 }());
 

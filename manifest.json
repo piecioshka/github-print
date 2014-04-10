@@ -2,22 +2,20 @@
     "manifest_version": 2,
 
     "name": "GitHub Print",
-    "description": "Print README.md file in markdown",
-    "version": "1.0",
+    "description": "Print README.md file on Github",
+    "version": "2.0",
 
     "icons": {
         "48": "images/GitHub-Mark-32px.png"
     },
 
-    "content_scripts": [
-        {
-            "matches": [
-                "*://github.com/**"
-            ],
+    "content_scripts": [{
+        "matches": [
+            "*://github.com/**"
+        ],
 
-            "js": ["scripts/print.js"]
-        }
-    ],
+        "js": ["scripts/print.js"]
+    }],
 
     "web_accessible_resources": [
         "styles/print.css"
