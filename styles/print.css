@@ -7,7 +7,9 @@
 .repository-meta,
 .repository-sidebar,
 .pagehead,
-.header {
+.header,
+.breadcrumb,
+.file-commit-form {
     display: none !important;
 }
 

@@ -21,6 +21,3 @@ License
 [0]: http://piecioshka.mit-license.org
 
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/piecioshka/github-print/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
