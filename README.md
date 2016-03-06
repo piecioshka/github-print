@@ -1,23 +1,18 @@
-GitHub Print
-============
+# GitHub Print
 
-Print `*.md` file without unnecessary containers, ex. `README.md`
+> Print `*.md` file without unnecessary containers, ex. `README.md`
+
+## How it works?
 
 Plugin use CSS Style injection to set `display: none` on useless elements.
 
-Installation
-============
+## Installation
 
-0. Fork
-0. Load extension by *Google Chrome Extension Manager*
-0. Refresh `http://github.com/**` page with opened file using markdown style.
-0. **Print your page!**
+1. Fork
+2. Load extension by *Google Chrome Extension Manager*
+3. Refresh `http://github.com/**` page with opened file using markdown style.
+4. **Print your page!**
 
-License
-=======
+##  License
 
-[The MIT License][0]
-
-[0]: http://piecioshka.mit-license.org
-
-
+[The MIT License](http://piecioshka.mit-license.org)

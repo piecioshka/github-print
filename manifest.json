@@ -3,7 +3,7 @@
 
     "name": "GitHub Print",
     "description": "Print README.md file on Github",
-    "version": "2.0",
+    "version": "2.1",
 
     "icons": {
         "48": "images/GitHub-Mark-32px.png"
