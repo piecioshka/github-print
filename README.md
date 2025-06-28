@@ -1,8 +1,8 @@
 # GitHub Print
 
-> Print `*.md` file without unnecessary containers, ex. `README.md`
+Print `*.md` file without unnecessary containers, ex. `README.md`
 
-## How it works?
+## How it works? 🚀
 
 Plugin use CSS Style injection to set `display: none` on useless elements.
 
@@ -15,4 +15,4 @@ Plugin use CSS Style injection to set `display: none` on useless elements.
 
 ##  License
 
-[The MIT License](http://piecioshka.mit-license.org)
+[The MIT License](https://piecioshka.mit-license.org)
